@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chat App</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script
+			src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+			integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+			crossorigin="anonymous"
+		></script>
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<div class="parent">
+			<div class="top">
+				<div class="welcome">
+					<h1>Welcome To Chat App! Here is the Public Chat :</h1>
+				</div>
+
+				<div class="chat-container">
+					<div class="chat-items"></div>
+					<div class="input-items">
+						<input
+							type="text"
+							name="chat-message"
+							id="chat-message"
+							placeholder="Enter Your Message Here"
+						/>
+						<button id="send-btn">Send</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
